@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExamFlow — Online Examination System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#"><span class="brand-icon">E</span><span>exam<span class="brand-light">flow</span><small>EXAMINATION PORTAL</small></span></a>
+    <div class="side-label">WORKSPACE</div>
+    <nav id="nav">
+      <button class="nav-item active" data-page="dashboard"><span>▦</span> Dashboard</button>
+      <button class="nav-item" data-page="exams"><span>▤</span> Examinations</button>
+      <button class="nav-item" data-page="results"><span>◷</span> Results & history</button>
+      <button class="nav-item admin-only hidden" data-page="manage"><span>＋</span> Manage exams</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">✦</div><b>Need a hand?</b><p>Keep your focus, manage your time, and do your best.</p></div><div class="side-footer">© 2026 ExamFlow <span>v1.0.0</span></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button><div class="crumb">Workspace <span>/</span> <b id="crumbPage">Dashboard</b></div><div class="top-actions"><span class="status-pill"><i></i> System operational</span><div class="user-chip"><div class="avatar" id="avatar">G</div><div><b id="userName">Guest</b><small id="userRole">Welcome</small></div></div><button class="icon-btn" id="logoutBtn" title="Sign out">↗</button></div></header>
+    <section class="content" id="content"></section>
+    <footer class="main-footer">Built for better assessments <span>●</span> Secure. Simple. Focused.</footer>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop hidden" id="modal"></div>
+<script src="/app.js"></script>
+</body></html>
